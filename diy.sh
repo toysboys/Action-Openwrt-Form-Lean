@@ -83,14 +83,14 @@ cat > package/lean/automount/Makefile <<-EOF
 # See /LICENSE for more information.
 #
 
-include $(TOPDIR)/rules.mk
+include \$(TOPDIR)/rules.mk
 
 PKG_NAME:=automount
 PKG_VERSION:=1
 PKG_RELEASE:=29
 PKG_ARCH:=all
 
-include $(INCLUDE_DIR)/package.mk
+include \$(INCLUDE_DIR)/package.mk
 
 define Package/automount
   TITLE:=Mount autoconfig hotplug script.
@@ -111,10 +111,7 @@ define Package/automount/install
 	$(INSTALL_BIN) ./files/zzz-move-automount $(1)/etc/uci-defaults/zzz-move-automount
 endef
 
-$(eval $(call BuildPackage,automount))
-
-
-
+\$(eval $(call BuildPackage,automount))
 EOF
 
 
