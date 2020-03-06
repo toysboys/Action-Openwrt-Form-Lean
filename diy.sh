@@ -5,8 +5,6 @@ git clone https://github.com/Advanced-noob/luci-theme-atmaterial.git        pack
 git clone https://github.com/vernesong/OpenClash                                      package/clash
 git clone https://github.com/tty228/luci-app-serverchan.git                          package/serverchan
 
-#fix count error
-
 ln -s ../../diy/myipk ./package/
 
 
