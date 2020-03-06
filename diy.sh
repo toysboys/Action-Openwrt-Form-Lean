@@ -6,9 +6,6 @@ git clone https://github.com/vernesong/OpenClash                                
 git clone https://github.com/tty228/luci-app-serverchan.git                          package/serverchan
 
 #fix count error
-#fix count error
-rm package/lean/autocore/files/index.htm
-cp  ../diy/index.htm   package/lean/autocore/files/
 
 ln -s ../../diy/myipk ./package/
 
