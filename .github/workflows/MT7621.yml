@@ -102,7 +102,7 @@ jobs:
         git config user.email "bot@github.com"
         git add .
         git commit -m "$DATE"
-        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:mt7621_packages
+        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:packages/mipsel_24kc
 
     - name:  Push targets
       env:
@@ -114,7 +114,7 @@ jobs:
         git config user.email "bot@github.com"
         git add .
         git commit -m "$DATE"
-        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:mt7621_targets
+        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:targets/ramips
         
     - name: WeChat notification
       run: curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=mt7621编译完成
