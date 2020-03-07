@@ -116,8 +116,8 @@ jobs:
         git config user.name "bot"
         git config user.email "bot@github.com"
         git add .
-        git commit -m "$DATE"
-        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:ipq40xx_packages
+        git commit -m "$DATE"arm_cortex-a7_neon-vfpv4
+        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:packages/arm_cortex-a7_neon-vfpv4
 
     - name:  Push targets
       env:
@@ -129,7 +129,7 @@ jobs:
         git config user.email "bot@github.com"
         git add .
         git commit -m "$DATE"
-        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:ipq40xx_targets
+        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:targets/ipq40xx
         
     - name: WeChat notification
       run: curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=IPQ40XX编译完成
