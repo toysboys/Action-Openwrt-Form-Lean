@@ -111,7 +111,7 @@ jobs:
       env:
        SUPER_TOKEN: ${{ secrets.SUPER_TOKEN }}
       run: |
-        cd openwrt/bin/packages
+        cd openwrt/bin/packages/arm_cortex-a7_neon-vfpv4
         git init
         git config user.name "bot"
         git config user.email "bot@github.com"
