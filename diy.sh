@@ -1,10 +1,10 @@
 #add sonme additional packages
-git clone https://github.com/rufengsuixing/luci-app-adguardhome              package/adg
-#git clone https://github.com/destan19/OpenAppFilter                                package/oaf
+git clone https://github.com/rufengsuixing/luci-app-adguardhome             package/adg
+#git clone https://github.com/destan19/OpenAppFilter                         package/oaf
 git clone https://github.com/Advanced-noob/luci-theme-atmaterial.git        package/atmaterial
-git clone https://github.com/vernesong/OpenClash                                      package/clash
-git clone https://github.com/tty228/luci-app-serverchan.git                          package/serverchan
-
+git clone https://github.com/vernesong/OpenClash                            package/clash
+git clone https://github.com/tty228/luci-app-serverchan.git                 package/serverchan
+git clone https://github.com/hyird/feed-netkeeper.git                       package/netkeeper
 ln -s ../../diy/myipk ./package/
 
 
