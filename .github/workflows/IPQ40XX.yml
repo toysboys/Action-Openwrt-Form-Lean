@@ -123,7 +123,7 @@ jobs:
       env:
        SUPER_TOKEN: ${{ secrets.SUPER_TOKEN }}
       run: |
-        cd openwrt/bin/targets
+        cd openwrt/bin/targets/ipq40xx/generic
         git init
         git config user.name "bot"
         git config user.email "bot@github.com"
