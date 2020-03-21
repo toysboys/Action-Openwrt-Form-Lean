@@ -1,17 +1,17 @@
 name: Build OpenWrt X64
 
 on:
-#  release:
-#    types: [published]
+  release:
+    types: [published]
   push:
     branches:
       - master
     paths:
       - 'start'
-  schedule:
-    - cron: 0 0 * * *
-#  watch:
-#    types: [started]
+#  schedule:
+#    - cron: 0 0 * * *
+  watch:
+    types: [started]
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -114,7 +114,7 @@ jobs:
         git config user.email "bot@github.com"
         git add .
         git commit -m "$DATE"
-        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:targets/x86/64
+        git push --force --quiet https://$SUPER_TOKEN@github.com/toysboys/Action-Openwrt-Form-Lean.git  HEAD:targets/x86/64
         
     - name: WeChat notification
       run: curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=X64编译完成
