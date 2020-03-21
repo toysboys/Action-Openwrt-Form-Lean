@@ -1,4 +1,4 @@
-name: Build OpenWrt X64
+name: Build OpenWrt X64_1
 
 on:
   release:
