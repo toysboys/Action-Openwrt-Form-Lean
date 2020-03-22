@@ -102,7 +102,7 @@ jobs:
         git config user.email "bot@github.com"
         git add .
         git commit -m "$DATE"
-        git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/action-openwrt.git  HEAD:packages/x86_64
+        git push --force --quiet https://$SUPER_TOKEN@github.com/toysboys/Action-Openwrt-Form-Lean.git  HEAD:packages/x86_64
 
     - name:  Push targets
       env:
